@@ -30,14 +30,14 @@
       />
       <label class="label_input">Posez votre question</label>
     </div>
-
+<!-- Test -->
     <div @click="sendMessage" class="btn_parent">
       <div class="parent">
         <div class="background"></div>
         <div class="arrow1"></div>
         <div class="arrow2"></div>
         <span class="text-send">Envoyer</span>
-        <!-- <button class="btn_send" @click="sendMessage">></button> -->
+        <!-- <button class="btn_send" s @click="sendMessage">></button> -->
       </div>
     </div>
 
