@@ -67,6 +67,7 @@ export default {
       return new Promise((resolve) => setTimeout(resolve, ms));
     },
     async sendMessage() {
+      console.log(process.env.VUE_APP_OPENAI_API_TOKEN)
       const configuration = new Configuration({
         // organization: "org-kZeQvc757DgeZi3xuxeyUlYJ",
         apiKey: process.env.VUE_APP_OPENAI_API_TOKEN,
