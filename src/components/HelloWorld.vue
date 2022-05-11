@@ -69,7 +69,7 @@ export default {
     async sendMessage() {
       const configuration = new Configuration({
         // organization: "org-kZeQvc757DgeZi3xuxeyUlYJ",
-        apiKey: "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",
+        apiKey: process.env.VUE_APP_OPENAI_API_TOKEN,
       });
       const openai = new OpenAIApi(configuration);
 
