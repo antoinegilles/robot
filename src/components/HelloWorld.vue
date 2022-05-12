@@ -67,7 +67,6 @@ export default {
       return new Promise((resolve) => setTimeout(resolve, ms));
     },
     async sendMessage() {
-      console.log(process.env.VUE_APP_OPENAI_API_TOKEN)
       const configuration = new Configuration({
         // organization: "org-kZeQvc757DgeZi3xuxeyUlYJ",
         apiKey: process.env.VUE_APP_OPENAI_API_TOKEN,
@@ -76,7 +75,7 @@ export default {
 
       const response = await openai.createCompletion("text-davinci-002", {
         prompt: this.message,
-        max_tokens: 6,
+        max_tokens: 100,
         temperature: 0,
       });
       this.reponse = response.data.choices[0].text;
